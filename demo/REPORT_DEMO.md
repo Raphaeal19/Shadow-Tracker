@@ -36,4 +36,4 @@
 **Subject:** DEMO_USER_01 | **Status:** INCONSISTENT
 
 **Narrative Analysis:**
-The data describes an agent capable of high discipline (Week 1, 4) but susceptible to **stress-induced regression**. In Week 3, a failure to regulate work hours led to an 'Avoidance Spiral' (400% increase in missed logs). Recovery in Week 4 demonstrates resilience, but the trigger remains unaddressed.
+The data describes an user capable of high discipline (Week 1, 4) but susceptible to **stress-induced regression**. In Week 3, a failure to regulate work hours led to an 'Avoidance Spiral' (400% increase in missed logs). Recovery in Week 4 demonstrates resilience, but the trigger remains unaddressed.
