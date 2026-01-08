@@ -1,0 +1,37 @@
+services:
+  ai-server:
+    build:
+      context: .
+      target: llama-runtime
+    volumes:
+      - ./models:/app/models
+    command: >
+      llama-server
+      -m /app/models/Phi-3-mini-4k-instruct-q4.gguf
+      --host 0.0.0.0
+      --port 8080
+      -c 2048
+      -t 4
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8080 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  telegram-bot:
+    build:
+      context: .
+      target: bot-runtime
+    depends_on:
+      ai-server:
+        condition: service_healthy
+    environment:
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+      AI_SERVER_URL: ${AI_SERVER_URL}
+      PYTHONBUFFERED: 1
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
