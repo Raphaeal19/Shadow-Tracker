@@ -23,6 +23,9 @@ The application addresses the "intention-behavior gap"; often rationalized by in
 * **Visualization:** `Matplotlib` and `Pandas` for data aggregation and chart generation.
 * **Orchestration:** Docker Compose for managing service dependencies between the bot and the AI inference server.
 
+## 💻 Demo
+* Please checkout the [DEMO](https://github.com/Raphaeal19/Shadow-Tracker/blob/main/demo/REPORT_DEMO.md).
+
 ## 🚀 Deployment
 
 ### 1. Prerequisites
