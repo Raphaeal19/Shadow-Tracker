@@ -1,6 +1,11 @@
 # 🛡️ Shadow-Tracker: Live Logic Demo
 
+## Actual screenshot of Telegram Bot
+<img src="Screenshot_20260108_080358_Telegram.jpg" alt="Screenshot" width="500" height="1500"/>
+
 > Generated using the `bot-runtime` container logic against a simulated dataset.
+
+# Simulated Accountability Partner Analysis Demo
 
 ## 📅 Week 1
 ![Chart](chart_week_51.png)
