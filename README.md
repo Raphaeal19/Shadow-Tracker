@@ -4,6 +4,10 @@
 
 The system enforces data integrity through hourly temporal sampling and heuristic analysis, detecting patterns of avoidance, priority neglect, and inconsistencies between logged activities and defined goals.
 
+## Screenshot of Telegram Bot
+<img src="demo/Screenshot_20260108_080358_Telegram.jpg" alt="Screenshot" width="500" height="1500"/>
+
+
 ## 🧠 Core Methodology: Cognitive Audit
 The application addresses the "intention-behavior gap"; often rationalized by internal narratives (conceptually referred to here as "The Liar"). Shadow-Tracker implements a **Local Inference Engine** (via `llama.cpp`) to parse natural language entries, classifying them against a weighted priority matrix to provide objective, immediate feedback on resource allocation.
 
